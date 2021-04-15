@@ -59,10 +59,9 @@ void MostrarSolucao(){
 int main(){
     PopularMatriz();
     MostrarMatriz();
-    /*triangularizar();
-    MostrarMatriz();*/
-
-    /*solucao();
-    MostrarSolucao();*/
+    triangularizar();
+    MostrarMatriz();
+    solucao();
+    MostrarSolucao();
     
 }
