@@ -22,9 +22,9 @@ void PopularMatriz(){
 void MostrarMatriz(){
     for(int i=0;i<N;i++){
         for(int j=0;j<N;j++){
-            printf ("[%.2f]",A[i][j]);
+            printf ("[%.4f] ",A[i][j]);
         }
-        printf("%.2f",B[i]);
+        printf(" = %.4f",B[i]);
         printf ("\n");
     }
 }
@@ -53,20 +53,22 @@ void solucao(){
 }
 
 void MostrarSolucao(){
-    cout<<"\nSolucao do problema:\n"<<endl;
+    cout<<"\nSolucao do problema:"<<endl;
     for(int i=0;i<N;i++){
-        printf("\nx[%d]=[%.2f]",i,X[i]);
+        printf("\nx[%d] = [%.4f]\t",i,X[i]);
     }
 }
 
 
 int main(){
     PopularMatriz();
+    printf("Matriz: \n");
     MostrarMatriz();
-    printf("\n\n");
+    printf("\n");
     triangularizar();
+    printf("Matriz Triangularizada: \n");
     MostrarMatriz();
-    printf("\n\n");
+    printf("\n");
     solucao();
     MostrarSolucao();
     printf("\n\n");
